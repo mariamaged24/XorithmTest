@@ -9,7 +9,7 @@ The project build status now is completed successfully with no current errors.
 * This project was implemented using Nextjs, so for someone to use/edit this project they need a basic understanding of Nextjs, Reactjs, HTML & CSS.
 * The styling libraries used in thisproject are Bootrstrap & MaterialUI.
 
-* To achieve authentication in this application, 2 methods were used:
+* To achieve authentication in this application, 2 methods were used and integrated with NextAuth:
     * Firebase authentication for using email and passwords
     * OAuth authentication for third parties to achieve google sign-in authentication
 
