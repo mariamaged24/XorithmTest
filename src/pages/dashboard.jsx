@@ -24,16 +24,16 @@ const { status } = useSession()
 return(
     <div>
       
-<nav style={{background:"linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(92,9,121,1) 38%, rgba(0,212,255,1) 100%)", }} class="navbar bg-body-tertiary">
-  <form class="container-fluid">
+<nav style={{background:"linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(92,9,121,1) 38%, rgba(0,212,255,1) 100%)", }} className="navbar bg-body-tertiary">
+  <form className="container-fluid">
     <p style={{color:"white"}}> XOrithm's Dashboard</p>
     <div style={{textAlign:"right"}}>
-    <div class="dropdown">
+    <div className="dropdown">
   <button style={{borderColor:"white", color:"white"}}class="btn btn-transparent dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
   </button>
-  <ul class="dropdown-menu dropdown-menu-end">
-    <li><a class="dropdown-item" href="https://xorithm.com/">Home</a></li>
-    <li><a class="dropdown-item" onClick={handleSignout}>Sign out</a></li>
+  <ul className="dropdown-menu dropdown-menu-end">
+    <li><a className="dropdown-item" href="https://xorithm.com/">Home</a></li>
+    <li><a className="dropdown-item" onClick={handleSignout}>Sign out</a></li>
   </ul>
 </div>
     </div>

@@ -9,8 +9,6 @@ import Link from 'next/link';
 
 export default function Signup() {
   const [email, setEmail] = useState('');
-  const [fName, setFname] = useState('');
-  const [lName, setLname] = useState('');
   const [password, setPassword] = useState('');
   
   const handleSubmit = (e) => {
