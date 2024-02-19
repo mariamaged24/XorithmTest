@@ -29,7 +29,7 @@ return(
     <p style={{color:"white"}}> XOrithm's Dashboard</p>
     <div style={{textAlign:"right"}}>
     <div className="dropdown">
-  <button style={{borderColor:"white", color:"white"}}class="btn btn-transparent dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  <button style={{borderColor:"white", color:"white"}}className="btn btn-transparent dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
   </button>
   <ul className="dropdown-menu dropdown-menu-end">
     <li><a className="dropdown-item" href="https://xorithm.com/">Home</a></li>
@@ -43,7 +43,7 @@ return(
 <div className="container d-flex justify-content-center align-items-center vh-100">
 
             <div className="column">
-            <span style={{textAlign:"center", width:"58rem", height:"100px", display:"inline-block", fontSize:"1.5rem", paddingTop:"1.5rem"}}class="badge text-bg-success col-md-4 mb-5">All Systems Operational</span>
+            <span style={{textAlign:"center", width:"58rem", height:"100px", display:"inline-block", fontSize:"1.5rem", paddingTop:"1.5rem"}}className="badge text-bg-success col-md-4 mb-5">All Systems Operational</span>
             <p className="mb-2" style={{textAlign:"left",color:"grey"}}><small>Uptime over The Past 90 Days</small></p>
                 <div className="col-md-4 mb-4">
                     <UptimeChart server={srv1} />
