@@ -1,8 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# XOrithm's Dashboard
+### Why is this web application implemented?
+XOrithm's Dashboard is implemented in order to be able to allow authenticated users to view the entity's servers' health.
 
-## Getting Started
+### Current Build Status of the project:
+The project build status now is completed successfully with no current errors.
 
-First, run the development server:
+### Used Frameworks:
+* This project was implemented using Nextjs, so for someone to use/edit this project they need a basic understanding of Nextjs, Reactjs, HTML & CSS.
+* The styling libraries used in thisproject are Bootrstrap & MaterialUI.
+
+* To achieve authentication in this application, 2 methods were used:
+    * Firebase authentication for using email and passwords
+    * OAuth authentication for third parties to achieve google sign-in authentication
+
+### Step-by-step guide on how to use and run this project:
+* Create your own .env file which includes: 
+    * GOOGLE_ID = OAuth Client ID
+    * GOOGLE_SECRET = OAuth Client SECRET
+    * NEXTAUTH_URL = http://localhost:3000
+    * NEXTAUTH_SECRET = Secure String for nextauth
+* In your VS Code terminal in order to run the application you’ll run the following commands
+
+First, install all dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -14,27 +43,15 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Disclaimer
+In order to be able to test your gmail to sign in with google, you must add it in the Test Users in OAuth Consent Screen.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Future Work
+* Verification for Passwords while signing up and requiring stronger Passwords
+* Adding more social media ways to sign in
+* Adding Incidents' Descriptions inside the dashboard
+* Search & Filter Servers inside the dashboard
+* Implementing the Server side for the application for more robust server
+* Implementing Dark Mode for the Application
+* Add more styling for the dashboard to be more user friendly
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
